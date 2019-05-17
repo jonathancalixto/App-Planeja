@@ -7,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit{
 
+  planejamentos;
+
   constructor(){
-    this.cervejas = []
+    this.planejamentos = []
+
   }
 
   cervejas;

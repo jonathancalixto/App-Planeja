@@ -3,7 +3,7 @@ import { ComponentFactoryResolver } from '@angular/core/src/render3';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { NavController } from '@ionic/angular';
-import { METHODS } from 'http';
+
 
 @Component({
   selector: 'app-add-cerveja',

@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: 'home', loadChildren: './home/home.module#HomePageModule' },
   { path: 'cerveja-detalhes/:id', loadChildren: './cerveja-detalhes/cerveja-detalhes.module#CervejaDetalhesPageModule' },
   { path: 'add-cerveja', loadChildren: './add-cerveja/add-cerveja.module#AddCervejaPageModule' },
+  { path: 'novo-planejamento', loadChildren: './novo-planejamento/novo-planejamento.module#NovoPlanejamentoPageModule' },
 ];
 
 @NgModule({

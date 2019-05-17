@@ -1,10 +1,10 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      App Loja de Cerveja
+      Planejamento-Financeiro
     </ion-title>
     <ion-buttons slot='primary'>
-      <ion-button [routerLink]='["/add-cerveja"]'>
+      <ion-button [routerLink]='["/novo-planejamento"]'>
         <ion-icon name='add'></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -12,32 +12,32 @@
 </ion-header>
 
 <ion-content padding>
-  Bem vindo ao App de Cerveja mais famoso do Brasil.
+  bem vindo ao App-planeja.
   <br/>
   <br/>
-  <div *ngIf="cervejas.length > 0">
+  <div *ngIf="planejamentos.length > 0">
     
-    <h2>Conheça nossas Cervejas</h2>
+    <h2>Fique por dentro do nosso app-planeja</h2>
     <br/>
-    <div *ngFor="let cerveja of cervejas">
+    <div *ngFor="let planejamentos of planejamentos">
       <ion-card>
         <ion-card-content>
             <h2>
-                {{cerveja.nome}}
+                {{planejamento.nome}}
             </h2>
             <p>
-              {{cerveja.descricao}}
+              {{planejamento.descricao}}
             </p>
             <p style="text-align: right">
-              <ion-button color="danger" fill="outline" size='small' (click)="excluir(cerveja.nome)">Excluir</ion-button>
+              <ion-button color="danger" fill="outline" size='small' (click)="excluir(planejamento.nome)">Excluir</ion-button>
             </p>
         </ion-card-content>
         </ion-card>
     </div>
   </div>
-  <div *ngIf="cervejas.length === 0">
-    <p>Ainda não há cervejas cadastradas.</p>
-    <ion-button [routerLink]='["/add-cerveja"]'>Cadastrar Agora</ion-button>
+  <div *ngIf="planejamentos.length === 0">
+    <p>Ainda Não há Nenhum planejamento cadastrado.</p>
+    <ion-button [routerLink]='["/novo-planejamento"]'>Cadastrar Agora os seus planos</ion-button>
   </div>
 
 
